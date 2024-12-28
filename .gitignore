@@ -2,3 +2,5 @@
 lib/
 bin/
 CMakeLists.txt.user
+.idea/*
+openauto.iml

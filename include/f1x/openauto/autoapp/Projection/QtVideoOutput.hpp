@@ -33,7 +33,7 @@ namespace autoapp
 namespace projection
 {
 
-class QtVideoOutput: public QObject, public VideoOutput, boost::noncopyable
+class QtVideoOutput: public QObject, public VideoOutput, boost::asio::noncopyable
 {
     Q_OBJECT
 
