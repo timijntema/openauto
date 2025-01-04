@@ -40,8 +40,8 @@ endif(WIN32)
 
 if(RPI3_BUILD)
     add_definitions(-DOMX_SKIP64BIT -DRASPBERRYPI3)
-    set(BCM_HOST_LIBRARIES "/opt/vc/lib/libbcm_host.so")
-    set(BCM_HOST_INCLUDE_DIRS "/opt/vc/include")
+    set(BCM_HOST_LIBRARIES "/usr/lib/arm-linux-gnueabihf/libbcm_host.so")
+    set(BCM_HOST_INCLUDE_DIRS "/usr/include")
 endif(RPI3_BUILD)
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}
