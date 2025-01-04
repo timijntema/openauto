@@ -50,7 +50,7 @@ public:
     void onAVMediaIndication(const aasdk::common::DataConstBuffer& buffer) override;
     void onVideoFocusRequest(const aasdk::proto::messages::VideoFocusRequest& request) override;
     void onChannelError(const aasdk::error::Error& e) override;
-    void onAVChannelStopIndication(const proto::messages::AVChannelStopIndication& indication) override;
+    void onAVChannelStopIndication(const aasdk::proto::messages::AVChannelStopIndication& indication) override;
 
 private:
     using std::enable_shared_from_this<VideoService>::shared_from_this;
