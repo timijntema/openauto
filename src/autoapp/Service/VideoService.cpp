@@ -151,6 +151,9 @@ void VideoService::fillFeatures(aasdk::proto::messages::ServiceDiscoveryResponse
     videoConfig1->set_dpi(videoOutput_->getScreenDPI());
 }
 
+void VideoService::onAVChannelStopIndication(const aasdk::proto::messages::VideoFocusRequest& request) {
+}
+
 void VideoService::onVideoFocusRequest(const aasdk::proto::messages::VideoFocusRequest& request)
 {
     OPENAUTO_LOG(info) << "[VideoService] video focus request, display index: " << request.disp_index()
